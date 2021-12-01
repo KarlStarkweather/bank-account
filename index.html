@@ -9,31 +9,64 @@
 </head>
 <body>
   <div class="container">
-    <h1>bank account</h1>
+    <h1>Bank Account</h1>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Create Account</h5>
+            <p class="card-text">Create a new account below.</p>
+            <a href="#" class="btn btn-primary">Submit</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Sign In </h5>
+            <p class="card-text">Sign in to your account below.</p>
+            <a href="#" class="btn btn-primary">Sign In</a>
+          </div>
+        </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Transaction History</h5>
+            <p class="card-text"> Click here for your history</p>
+            <a href="#" class="btn btn-primary">History</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    
     <div class="row">
       <div class="col-md-6">
         <hr>
-        <h2> Total </h2>
+        <h2> Account Holder </h2>
         <form id="new-contact">
           <div class="form-group">
-            <label for="new-total">account holder</label>
+            <label for="new-accountHolder">Account Holder</label>
             <input type="text"  class="form-control" id="new-account holder">
+            <button type="btn-accountholder" class="btn-primary">Submit</button>
           </div>
-          <div class="form-group">
-            <label for="new-inital balance"> Initial Balance </label>
-            <input type="text"  class="form-control" id="new-initial-balance">
-          </div>
-          <button type="submit" class="btn-primary">Add</button>
+          <h2> Deposit/Withdrawal</h2>
+            <div class="form-group">
+              <label for="new-deposits">Deposit</label>
+              <input type="text"  class="form-control" id="new-deposit">
+            </div>
+            <button type="btn-deposit" class="btn-primary">Deposit</button>
+            <div class="form-group">
+              <label for="new-withdrawal">Withdrawal</label>
+              <input type="text"  class="form-control" id="new-withdrawal">
+            </div>
+            <button type="btnwithdrawal" class="btn-primary">Withdrawal</button>
         </form>
-        <hr>
-        <h2>Summary:</h2>
-        <ul id="contacts">
-        </ul>
       </div>
+
       <div class="col-md-6">
-        <div id="show-contact">
-          <p>Account Holder: <span class="first-name"></span></p>
-          <p>Amount: <span class="last-name"></span></p>
+        <div id="show-total">
           <p>Balance: <span class = "balance"></span> </p>
           <div id="buttons">
           </div>
